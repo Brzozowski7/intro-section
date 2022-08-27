@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    user-select: none;
 }
 body{
     font-family: 'Epilogue', sans-serif;
@@ -155,9 +156,6 @@ body{
 }
 .infoContainer{
     margin-top:2rem;
-    padding: 0 0.5rem;
-    display:flex;
-    flex-direction: column;
     gap:1.5rem;
     align-items: center;
     text-align: center;
@@ -168,7 +166,7 @@ body{
 }
 .infoContainer p{
     color:hsl(0, 0%, 41%);
-    width:100%;
+    width:95%;
 }
 .infoContainer button{
     background-color: hsl(0, 0%, 8%);
