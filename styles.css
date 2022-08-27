@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 18px;
+}
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    width:100vw;
+    height:100vh;
+    background-color:hsl(0, 0%, 98%);
+    overflow: hidden;
+}
+.navbarContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+}
+.navbarContainer img{
+    height: 1rem;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 100%;
+}
+.imageContainer{
+    background: url(./images/image-hero-mobile.png);
+    background-size: cover;
+    height: 40%;
+}
+.infoContainer{
+    margin-top:2rem;
+    padding: 0 0.5rem;
+    display:flex;
+    flex-direction: column;
+    gap:1.5rem;
+    align-items: center;
+    text-align: center;
+}
+.infoContainer p{
+    color:hsl(0, 0%, 41%);
+}
+.infoContainer button{
+    background-color: hsl(0, 0%, 8%);
+    color:white;
+    width:8rem;
+    height:2.5rem;
+    border-radius: 0.7rem;
+    font-weight: 700;
+    border:none;
+}
+.clientsContainer{
+    margin-top: 2rem;
+    display:flex;
+    flex-direction: row;
+    height:1.5rem;
+    justify-content: space-around;
+}
+.clientsContainer img{
+    height:1rem;
+}
