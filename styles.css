@@ -15,15 +15,15 @@ body {
   background-color: var(--almostWhite);
 }
 header {
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-.navbarContainer {
   display: flex;
   flex-direction: row;
   margin: 1rem 2rem;
   align-items: center;
   gap: 2rem;
+}
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 nav {
   display: flex;
