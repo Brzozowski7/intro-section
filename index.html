@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png" />
     <title>Intro section</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <navbar class="navbarContainer">
-            <h1>snap</h1><img src="./images/icon-menu.svg"/>
-            <div class="navbarMenu">
-                <ul class="navbarItems">
-                    <li>Features <img src="./images/icon-arrow-down.svg"/></li>
-                    <li>Company <img src="./images/icon-arrow-down.svg"/></li>
-                    <li>Careers</li>
-                    <li>About</li>
-                </ul>
-                <div class="authOptions">
-                    <a class="login">Login</a>
-                    <a class="register">Register</a>
-                </div>
-            </div>
-        </navbar>
-        <div class="imageAndInfoContainer">
+      <div class="navbarContainer">
+        <header>snap</header>
+        <nav>
+          <img src="./images/icon-menu.svg" alt="hamburger-menu" />
+          <ul>
+            <li>
+              Features
+              <img src="./images/icon-arrow-down.svg" alt="arrow-down" />
+            </li>
+            <li>
+              Company <img src="./images/icon-arrow-down.svg" alt="arrow-up" />
+            </li>
+            <li>Careers</li>
+            <li>About</li>
+          </ul>
+          <div class="authOptions">
+            <a class="login authAction">Login</a>
+            <a class="register authAction">Register</a>
+          </div>
+        </nav>
+      </div>
+      <main>
         <div class="imageContainer"></div>
         <div class="infoContainer">
-            <h2>Make remote work</h2>
-            <p>
-                Get your team in sync, no matter your location.
-                Streamline processes, create team rituals, and watch productivity soar.
-            </p>
-            <button>Learn more</button>
-
-        <div class="clientsContainer">
-            <image src="./images/client-audiophile.svg"/>
-            <image src="./images/client-databiz.svg"/>
-            <image src="./images/client-maker.svg"/>
-            <image src="./images/client-meet.svg"/>
+          <h2>Make remote work</h2>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button>Learn more</button>
+          <div class="clientsContainer">
+            <img src="./images/client-audiophile.svg" alt="client-logo" />
+            <img src="./images/client-databiz.svg" alt="client-logo" />
+            <img src="./images/client-maker.svg" alt="client-logo" />
+            <img src="./images/client-meet.svg" alt="client-logo" />
+          </div>
         </div>
-        </div>
-        </div>
+      </main>
     </div>
-</body>
+  </body>
 </html>
