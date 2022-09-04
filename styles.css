@@ -1,0 +1,205 @@
+:root {
+  --almostWhite: hsl(0, 0%, 98%);
+  --almostBlack: hsl(0, 0%, 8%);
+  --gray: hsl(0, 0%, 41%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+body {
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+  background-color: var(--almostWhite);
+}
+header {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 2rem;
+  align-items: center;
+  gap: 2rem;
+}
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+nav img {
+  display: none;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+nav li {
+  list-style: none;
+  padding: 1rem;
+  color: var(--gray);
+  vertical-align: middle;
+}
+nav li:hover {
+  cursor: pointer;
+  color: black;
+}
+nav li > img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.authOptions {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.login {
+  padding: 0.5rem 1rem;
+}
+.register {
+  border: 1px var(--almostBlack) solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.authAction:hover {
+  cursor: pointer;
+}
+main {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 80vh;
+  width: 100vw;
+  padding: 0 6rem;
+}
+.imageContainer {
+  background-image: url(./images/image-hero-desktop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50%;
+}
+.infoContainer {
+  margin-top: 4rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.infoContainer p {
+  color: var(--gray);
+  width: 70%;
+}
+.infoContainer h2 {
+  font-size: 6rem;
+}
+.infoContainer button {
+  background-color: var(--almostBlack);
+  color: white;
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 0.7rem;
+  font-weight: 700;
+  border: none;
+}
+.infoContainer button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.infoContainer button:hover {
+  cursor: pointer;
+}
+.clientsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.clientsContainer img {
+  height: 1.3rem;
+}
+
+@media screen and (max-width: 960px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--almostWhite);
+    overflow: hidden;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    margin: 0;
+  }
+  nav img {
+    height: 1rem;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav ul,
+  .authOptions {
+    display: none;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    padding: 0;
+  }
+  .imageContainer {
+    height: 50%;
+    width: 100%;
+    background-image: url(./images/image-hero-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .infoContainer {
+    margin-top: 2rem;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .infoContainer h2 {
+    font-size: 3rem;
+  }
+  .infoContainer p {
+    color: var(--gray);
+    width: 95%;
+  }
+  .infoContainer button {
+    background-color: var(--almostBlack);
+    color: white;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 0.7rem;
+    font-weight: 700;
+    border: none;
+  }
+  .clientsContainer {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    height: 1.5rem;
+    gap: 2rem;
+  }
+  .clientsContainer img {
+    height: 1rem;
+  }
+}
